@@ -66,7 +66,8 @@ RUN	cd /opt && \
 	cd Sming && \
 	git checkout origin/master && \
 	cd Sming && \
-	make ENABLE_SSL=1
+#	make ENABLE_SSL=1
+	make
 
 WORKDIR	/workspace
 ENTRYPOINT ["/bin/bash"]
